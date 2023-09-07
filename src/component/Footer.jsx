@@ -3,7 +3,7 @@ export default function Footer() {
     <div className="bg-gray-900 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <h2 className="text-center text-lg font-semibold leading-8 text-white">
-          Trusted by the world’s most innovative teams
+          Trusted by the world’s most innovative brands
         </h2>
         <div className="mx-auto mt-3 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-5 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lgmx-0 lg:max-w-none lg:grid-cols-5">
           <img
