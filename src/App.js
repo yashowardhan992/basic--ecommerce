@@ -1,0 +1,35 @@
+import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./App.css";
+import Cart from "./component/Cart";
+import { Toaster } from "react-hot-toast";
+import Home from "./component/Home";
+import Navbar from "./component/Navbar";
+import Product from "./component/Product";
+import Footer from "./component/Footer";
+import Checkout from "./component/Checkout";
+import Exit from "./component/Exit";
+
+import { CartProvider } from "react-use-cart";
+function App() {
+  return (
+    <CartProvider>
+      <Router>
+        <div>
+          <Toaster />
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/product" element={<Product />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/checkout" element={<Checkout />} />
+            <Route path="/exit" element={<Exit />} />
+          </Routes>
+          <Footer />
+        </div>
+      </Router>
+    </CartProvider>
+  );
+}
+
+export default App;
