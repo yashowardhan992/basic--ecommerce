@@ -6,7 +6,7 @@ import { Toaster } from "react-hot-toast";
 import Home from "./component/Home";
 import Navbar from "./component/Navbar";
 import Product from "./component/Product";
-import Footer from "./component/Footer";
+
 import Checkout from "./component/Checkout";
 import Exit from "./component/Exit";
 
@@ -25,7 +25,7 @@ function App() {
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/exit" element={<Exit />} />
           </Routes>
-          <Footer />
+          
         </div>
       </Router>
     </CartProvider>
